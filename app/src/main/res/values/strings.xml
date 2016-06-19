@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GOTTA DO</string>
+    <string name="priotity_level">PRIORITY:</string>
+    <string name="todo_task">TASK:</string>
+    <string name="hint_todo_task"></string>
+
+    <!--<string name="hint_todo_task">Enter to-do task</string>-->
+    <string name="priority_task">PRIORITY</string>
+    <string name="hint_priority_task">Enter priority</string>
+    <string name="hint_task_notes">Additional comments</string>
+    <string name="btnAddTastk">ADD</string>
+    <string name="btn_Edit_Task">Save edits/return</string>
+    <string name="date_label">DUE DATE:</string>
+    <string name="btn_select_date">Select date</string>
+    <string name="notes_label">NOTES:</string>
+    <string name="todo_task_label">TODO TASK</string>
+    <string name="btn_addTask_label">ADD TASK</string>
+    <string name="btn_fgmtCancel">CANCEL</string>
+    <string name="btn_fgmtConfirm">SAVE</string>
+
+
+    <string-array name="priorityValues">
+        <item>HIGH</item>
+        <item>MEDIUM</item>
+        <item>LOW</item>
+        <item>ZERO</item>
+    </string-array>
+
+
+</resources>

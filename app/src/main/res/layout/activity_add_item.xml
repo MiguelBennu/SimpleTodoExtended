@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                tools:context="com.iryarte.simpletodoextended.AddItemActivity"
+              android:background="@drawable/custom_background"
+                android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo_task"
+            android:id="@+id/textView2"
+            android:textSize="24dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTaskAdd"
+            android:hint="@string/hint_todo_task"
+            android:text=""
+            android:textSize="24dp"
+            android:layout_marginLeft="@dimen/margin_frame_horizontal_margin"
+            android:layout_marginRight="@dimen/margin_frame_horizontal_margin"
+            android:layout_gravity="top"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:paddingTop="@dimen/date_frame_top_margin"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/date_label"
+                android:id="@+id/textView3"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:layout_weight="0.62"
+                android:gravity="center_horizontal"
+                android:paddingLeft="-10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAddDate"
+                android:onClick="setDate"
+                android:text="@string/btn_select_date"
+                android:textSize="24dp"
+                android:background="@drawable/btn_date_shape_add"
+                android:layout_weight="0.29"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:paddingTop="@dimen/date_frame_top_margin"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priotity_level"
+                android:id="@+id/priorityLabel"
+                android:gravity="top|center_horizontal"
+                android:textSize="20dp"
+                android:layout_gravity="top"
+                android:layout_weight="0.77"
+                android:paddingLeft="-10dp"/>
+            <Spinner
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPriorityAdd"
+                android:text=""
+                android:hint="Set priority"
+                android:layout_gravity="top"
+                android:layout_marginTop="0dp"
+                android:textSize="30dp"
+
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="0.14">
+            </Spinner>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="81dp"
+            android:text="@string/btnAddTastk"
+            android:id="@+id/button"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:onClick="onAddTask"
+            android:background="@drawable/btn_add_shape"
+
+            android:textSize="40dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_gravity="left"
+            android:text="@string/notes_label"
+            android:textSize="24dp"
+            android:paddingTop="@dimen/date_frame_top_margin"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:hint="@string/hint_task_notes"
+            android:ems="10"
+            android:id="@+id/etTaskNotes"
+            android:textSize="24dp"
+            android:gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
