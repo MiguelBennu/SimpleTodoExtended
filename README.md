@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 * [X] Splah Screen
   
-  Give I can see this being very useful with the following added features
+  I can see this being very useful with the following added features
   - Update entry can be refined to allow duplicate entries
   - Picture functionality - Tak a picture and attach to the task
   - Alarm/notification if completion date is past due
